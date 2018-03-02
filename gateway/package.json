@@ -1,0 +1,25 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link-http": "^1.5.2",
+    "apollo-link-ws": "^1.0.7",
+    "graphql-tools": "^2.21.0",
+    "graphql-yoga": "^1.4.3",
+    "subscriptions-transport-ws": "^0.9.6",
+    "ws": "^4.1.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.1.2",
+    "ts-node": "4.1.0",
+    "typescript": "2.7.2"
+  }
+}

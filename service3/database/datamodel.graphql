@@ -1,0 +1,6 @@
+type Genre {
+  id: ID! @unique
+  genreId: String! @unique
+  name: String!
+  movieIds: [String!]!
+}

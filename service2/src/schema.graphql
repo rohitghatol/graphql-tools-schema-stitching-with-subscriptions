@@ -1,0 +1,16 @@
+# import Post from "./generated/prisma.graphql"
+
+type Query {
+  movies(where: MovieWhereInput, orderBy: MovieOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Movie]!
+}
+
+type Mutation {
+  createMovie(data: MovieCreateInput!): Movie!
+  updateMovie(data: MovieUpdateInput!, where: MovieWhereUniqueInput!): Movie
+  deleteMovie(where: MovieWhereUniqueInput!): Movie
+}
+
+type Subscription {
+  movie(where: MovieSubscriptionWhereInput): MovieSubscriptionPayload
+
+}

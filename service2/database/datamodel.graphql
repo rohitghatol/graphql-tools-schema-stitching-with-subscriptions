@@ -1,0 +1,8 @@
+
+type Movie {
+  id: ID! @unique
+  movieId: String! @unique
+  name: String!
+  actorIds: [String!]!
+  genreId: String
+}

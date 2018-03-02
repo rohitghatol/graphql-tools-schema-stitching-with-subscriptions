@@ -1,0 +1,12 @@
+mutation {
+  DrNo: createMovie(data: {
+    movieId: "DrNo",
+    name:"Dr. No",
+    genreId: "action",
+    actorIds: {set: ["sean-connery"]}
+  }) {
+    id
+  }
+  
+
+}

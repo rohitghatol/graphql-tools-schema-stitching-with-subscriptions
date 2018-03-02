@@ -1,0 +1,16 @@
+# import Post from "./generated/prisma.graphql"
+
+type Query {
+  genres(where: GenreWhereInput, orderBy: GenreOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Genre]!
+}
+
+type Mutation {
+  createGenre(data: GenreCreateInput!): Genre!
+  updateGenre(data: GenreUpdateInput!, where: GenreWhereUniqueInput!): Genre
+  deleteGenre(where: GenreWhereUniqueInput!): Genre
+}
+
+type Subscription {
+  genre(where: GenreSubscriptionWhereInput): GenreSubscriptionPayload
+
+}

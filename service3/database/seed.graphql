@@ -1,0 +1,13 @@
+mutation {
+  action: createGenre(data:{
+    genreId: "action",
+    name: "Action",
+    movieIds:{
+      set:["DrNo"]
+    }
+  }){
+    id
+  }
+
+
+}

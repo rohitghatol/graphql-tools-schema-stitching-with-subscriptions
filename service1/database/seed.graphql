@@ -1,0 +1,11 @@
+mutation {
+  seanconnery: createActor(data: {
+      actorId: "sean-connery",
+      firstName: "Sean",
+      lastName: "Connery",
+      gender: MALE
+  }){
+    id
+  }
+
+}

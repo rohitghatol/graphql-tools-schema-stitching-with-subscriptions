@@ -1,0 +1,16 @@
+# import Post from "./generated/prisma.graphql"
+
+type Query {
+  actors(where: ActorWhereInput, orderBy: ActorOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Actor]!
+}
+
+type Mutation {
+  createActor(data: ActorCreateInput!): Actor!
+  updateActor(data: ActorUpdateInput!, where: ActorWhereUniqueInput!): Actor
+  deleteActor(where: ActorWhereUniqueInput!): Actor
+}
+
+type Subscription {
+  actor(where: ActorSubscriptionWhereInput): ActorSubscriptionPayload
+
+}

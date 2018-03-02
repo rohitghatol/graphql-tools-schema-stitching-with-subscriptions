@@ -1,0 +1,13 @@
+enum Gender{
+  MALE
+  FEMALE
+  OTHER
+}
+
+type Actor {
+  id: ID! @unique
+  actorId: String! @unique
+  firstName: String!
+  lastName: String!
+  gender: Gender!
+}
